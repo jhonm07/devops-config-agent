@@ -1,4 +1,4 @@
-rm -rf  /home/azureuser/myagent/
+sudo rm -rf  /home/azureuser/myagent/
 mkdir /home/azureuser/myagent/
 cd /home/azureuser/myagent/
  tar zxvf ../vsts-agent-linux-x64-3.230.0.tar.gz
