@@ -1,8 +1,19 @@
-rm -rf  /home/azureuser/myagent/
-mkdir /home/azureuser/myagent/
-cd /home/azureuser/myagent/
- tar zxvf ../vsts-agent-linux-x64-3.230.0.tar.gz
-export agentname=$(hostname)
-./config.sh --unattended --url https://dev.azure.com/alilteam --auth pat --token aqjyyemzij2mpwu3axwq62qklkiy44uj5o3jdnipvgu4ckro45qq --pool devops-scaleagent-casereview --agent $agentname --acceptTeeEula 
+#!/bin/bash
+
+# Define las variables necesarias
+organization="https://dev.azure.com/alilteam/"
+project="devops-alil-case-processor"
+pool="devops-scaleagent-casereview"
+agentName="agent01"
+patToken="  "
+
+# Descarga el agente
+mkdir myagent && cd myagent
+wget https://vstsagentpackage.azureedge.net/agent/2.195.2/vsts-agent-linux-x64-2.195.2.tar.gz
+tar zxvf vsts-agent-linux-x64-2.195.2.tar.gz
+
+
+
+# Instala el agente como servicio
 sudo ./svc.sh install
- sudo ./svc.sh start
+sudo ./svc.sh start
