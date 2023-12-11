@@ -1,8 +1,25 @@
-sudo rm -rf  /home/azureuser/myagent/ 
-mkdir /home/azureuser/myagent/
-cd /home/azureuser/myagent/
- tar zxvf ../vsts-agent-linux-x64-3.230.0.tar.gz
-export agentname=$(hostname)
-./config.sh --unattended --url https://dev.azure.com/alilteam --auth pat --token  2nkczo54wll3fqhaxudqk4j7mkfkqi62z3k6adurnpl27dayicja --pool devops-scaleagent-casereview --agent $agentname --acceptTeeEula 
+#!/bin/bash
+
+# Variables de configuración
+ORGANIZATION_URL="https://dev.azure.com/alilteam"
+PROJECT_NAME="devops-alil-case-processor"
+POOL_NAME="devops-scaleagent-casereview"
+AGENT_NAME="Agent-$(hostname)"
+PAT_TOKEN="3u7ncxaj4a6juswktdl3i3cjdzpguvj5e2ibpzjxbc7l237qvxpq"
+
+# Descargar e instalar el Azure Pipelines Agent
+curl -O https://vstsagentpackage.azureedge.net/agent/3.230.2/vsts-agent-linux-x64-3.230.2.tar.gz
+tar zxvf  vsts-agent-linux-x64-3.230.2.tar.gz
+
+# Configurar el agente
+./config.sh --unattended \
+  --url $ORGANIZATION_URL \
+  --auth pat \
+  --token $PAT_TOKEN \
+  --pool $POOL_NAME \
+  --agent $AGENT_NAME \
+  --replace
+
+# Iniciar el agente
 sudo ./svc.sh install
- sudo ./svc.sh start
+sudo ./svc.sh start
