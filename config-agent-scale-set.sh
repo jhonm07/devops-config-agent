@@ -1,8 +1,1 @@
-rm -rf  /home/azureuser/myagent/
-mkdir /home/azureuser/myagent/
-cd /home/azureuser/myagent/
- tar zxvf ../vsts-agent-linux-x64-3.230.0.tar.gz
-export agentname=$(hostname)
-./config.sh --unattended --url https://dev.azure.com/alilteam --auth pat --token aqjyyemzij2mpwu3axwq62qklkiy44uj5o3jdnipvgu4ckro45qq --pool devops-scaleagent-casereview --agent $agentname --acceptTeeEula 
-sudo ./svc.sh install
- sudo ./svc.sh start
+cm0gLXJmICAvaG9tZS9henVyZXVzZXIvbXlhZ2VudC8KbWtkaXIgL2hvbWUvYXp1cmV1c2VyL215YWdlbnQvCmNkIC9ob21lL2F6dXJldXNlci9teWFnZW50LwogdGFyIHp4dmYgLi4vdnN0cy1hZ2VudC1saW51eC14NjQtMy4yMzAuMC50YXIuZ3oKZXhwb3J0IGFnZW50bmFtZT0kKGhvc3RuYW1lKQouL2NvbmZpZy5zaCAtLXVuYXR0ZW5kZWQgLS11cmwgaHR0cHM6Ly9kZXYuYXp1cmUuY29tL2FsaWx0ZWFtIC0tYXV0aCBwYXQgLS10b2tlbiBhcWp5eWVtemlqMm1wd3UzYXh3cTYycWtsa2l5NDR1ajVvM2pkbmlwdmd1NGNrcm80NXFxIC0tcG9vbCBkZXZvcHMtc2NhbGVhZ2VudC1jYXNlcmV2aWV3IC0tYWdlbnQgJGFnZW50bmFtZSAtLWFjY2VwdFRlZUV1bGEgCnN1ZG8gLi9zdmMuc2ggaW5zdGFsbAogc3VkbyAuL3N2Yy5zaCBzdGFydA==
