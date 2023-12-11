@@ -5,7 +5,7 @@ organization="https://dev.azure.com/alilteam/"
 project="devops-alil-case-processor"
 pool="devops-scaleagent-casereview"
 agentName="agent01"
-patToken="  "
+patToken="6bf2wh2ecqwjyqhhsjrsavquker4zhnzizx5rfe4me6ny5obxzta"
 
 # Descarga el agente
 mkdir myagent && cd myagent
