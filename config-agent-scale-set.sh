@@ -1,11 +1,8 @@
-#!/bin/bash
-cd /home/azureuser/myagent
-export AZP_URL=https://dev.azure.com/alilteam
-export AZP_TOKEN=7hyu43qu5qqvttylrds54knavtlnwu24pukc6u3c4vqy3u7wgdoa
-export AZP_AGENTPOOL=devops-scaleagent-casereview
-export AZP_AGENT_NAME=agent01
-./config.sh remove
-sudo  ./svc.sh uninstall
-sudo ./svc.sh install
-sudo ./svc.sh start
-                    
+cm0gLXJmICAvaG9tZS9henVyZXVzZXIvbXlhZ2VudC8KbWtkaXIgL2hvbWUvYXp1cmV1c2VyL215
+YWdlbnQvCmNkIC9ob21lL2F6dXJldXNlci9teWFnZW50LwogdGFyIHp4dmYgLi4vdnN0cy1hZ2Vu
+dC1saW51eC14NjQtMy4yMzAuMC50YXIuZ3oKZXhwb3J0IGFnZW50bmFtZT0kKGhvc3RuYW1lKQou
+L2NvbmZpZy5zaCAtLXVuYXR0ZW5kZWQgLS11cmwgaHR0cHM6Ly9kZXYuYXp1cmUuY29tL2FsaWx0
+ZWFtIC0tYXV0aCBwYXQgLS10b2tlbiBhcWp5eWVtemlqMm1wd3UzYXh3cTYycWtsa2l5NDR1ajVv
+M2pkbmlwdmd1NGNrcm80NXFxIC0tcG9vbCBkZXZvcHMtc2NhbGVhZ2VudC1jYXNlcmV2aWV3IC0t
+YWdlbnQgJGFnZW50bmFtZSAtLWFjY2VwdFRlZUV1bGEgCnN1ZG8gLi9zdmMuc2ggaW5zdGFsbAog
+c3VkbyAuL3N2Yy5zaCBzdGFydAo=
