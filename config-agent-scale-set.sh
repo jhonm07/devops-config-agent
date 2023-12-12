@@ -5,7 +5,7 @@ ORGANIZATION_URL="https://dev.azure.com/alilteam"
 PROJECT_NAME="devops-alil-case-processor"
 POOL_NAME="devops-scaleagent-casereview"
 AGENT_NAME="Agent-$(hostname)"
-PAT_TOKEN="n6kqcc6tstonk457z4uk26fkjue2f62dkhpxtyob6fzyoqhwnaqa"
+PAT_TOKEN="pppyxogz56gf5smbh2yxbbvhgceyqcvukpok6dysvwrmw6q27wwq"
 
 # Descargar e instalar el Azure Pipelines Agent
 curl -O https://vstsagentpackage.azureedge.net/agent/3.230.2/vsts-agent-linux-x64-3.230.2.tar.gz
